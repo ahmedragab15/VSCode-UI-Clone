@@ -19,22 +19,8 @@ export const fileTree: IFile = {
       children: [
         {
           id: uuid(),
-          name: "index.html",
-          isFolder: false,
-          content: `<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
-`,
+          name: "icons",
+          isFolder: true,
         },
       ],
     },
@@ -208,7 +194,8 @@ export default App;
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, 
+  rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 `,
@@ -249,6 +236,26 @@ node_modules
 dist
 dist-ssr
 *.local`,
+    },
+    {
+      id: uuid(),
+      name: "index.html",
+      isFolder: false,
+      content: `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1e1e1e" />
+<title>VSCode Clone</title>
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
+`,
     },
     {
       id: uuid(),

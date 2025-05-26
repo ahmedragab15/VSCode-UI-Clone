@@ -1,27 +1,37 @@
-# React + TypeScript + Vite
+# 🧩 VS Code UI Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and interactive clone of the Visual Studio Code interface built using **React**, **TypeScript**, and **Tailwind CSS**. This project replicates the core layout and experience of VS Code, complete with resizable panels, editor tabs, and syntax-highlighted code blocks.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **React** – UI library
+- **TypeScript** – Type-safe JavaScript
+- **Tailwind CSS** – Utility-first CSS framework
+- **React-Redux** – State management
+- **React-resizable-panels** – Drag-to-resize UI panels
+- **React-syntax-highlighter** – Code syntax highlighting
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## ✨ Features
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- 🧱 **Resizable Panels** – Fully adjustable sidebar, editor, and preview areas  
+- 🗂️ **Tab System** – Manage open files/tabs like real VS Code  
+- 🖍️ **Code Highlighting** – Beautiful, language-aware syntax themes  
+- ⚡ **Redux Integration** – Persistent UI state handling  
+- 🛠  **ReSize the Font** - Controls The Font Size
+- 🎨 **Responsive Design** – Works across screen sizes  
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
+
+## 📸 Preview
+
+![Screenshot](./public/preview.png)
+
+---
+
+## 🚀 Live Demo
+
+[🔗 View Live Demo](https://vscode-ui-clone.netlify.app)

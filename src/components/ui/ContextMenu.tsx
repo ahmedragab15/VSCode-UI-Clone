@@ -22,7 +22,7 @@ const ContextMenu = ({ positions: { x, y }, setShowMenu }: IProps) => {
     setShowMenu(false);
   };
   const onClose = () => {
-    const filtered = openedFiles.filter(file => file.id !== tabIdToRemove);
+    const filtered = openedFiles.filter((file) => file.id !== tabIdToRemove);
     dispatch(setOpenedFilesAction(filtered));
     setShowMenu(false);
   };
@@ -43,7 +43,7 @@ const ContextMenu = ({ positions: { x, y }, setShowMenu }: IProps) => {
   return (
     <div ref={menuRef}>
       <ul
-        className="z-10 w-32 origin-top-right rounded-md bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none p-2"
+        className="z-10 w-32 origin-top-right rounded-md bg-[#343046] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none p-1"
         role="menu"
         aria-orientation="vertical"
         aria-labelledby="menu-button"
@@ -53,18 +53,10 @@ const ContextMenu = ({ positions: { x, y }, setShowMenu }: IProps) => {
           top: y,
         }}
       >
-        <li
-          className="text-gray-400 block px-4 py-2 text-sm cursor-pointer hover:bg-gray-700 duration-300 rounded-sm"
-          role="menuitem"
-          onClick={onClose}
-        >
+        <li className="text-white block px-4 py-2 text-sm cursor-pointer hover:bg-[#544d70] duration-300 rounded-sm" role="menuitem" onClick={onClose}>
           Close
         </li>
-        <li
-          className="text-gray-400 block px-4 py-2 text-sm cursor-pointer hover:bg-gray-700 duration-300 rounded-sm"
-          role="menuitem"
-          onClick={onCloseAll}
-        >
+        <li className="text-white block px-4 py-2 text-sm cursor-pointer hover:bg-[#544d70] duration-300 rounded-sm" role="menuitem" onClick={onCloseAll}>
           Close All
         </li>
       </ul>

@@ -12,14 +12,14 @@ const OpenedFilesBar = () => {
   return (
     <div className="w-full">
       <div
-        className="flex items-center border-b-[1px] border-[#ffffff1f]"
-        onContextMenu={e => {
+        className="flex items-center border-b-[1px] border-[#ffffff1f] overflow-x-auto"
+        onContextMenu={(e) => {
           e.preventDefault();
           setMenuPosition({ x: e.clientX, y: e.clientY });
           setShowMenu(true);
         }}
       >
-        {openedFiles.map(file => (
+        {openedFiles.map((file) => (
           <OpenedFilesBarTab key={file.id} file={file} />
         ))}
       </div>
